@@ -84,9 +84,11 @@ a:hover {
 
   .project-tile.linked:hover {
     cursor: pointer;
+    opacity: 0.6;
   }
 
   .project-tile {
+    transition: 300ms;
     min-width: 200px;
     width: fit-content;
     max-width: 400px;
@@ -138,10 +140,10 @@ a:hover {
   }
 }
 
-.projects-container:nth-of-type(1) {
+.projects-container:nth-of-type(2) {
   @media screen and (min-width: 600px) {
     .project-tile {
-      max-width: 25%;
+      max-width: 50%;
     }
   }
 
@@ -153,7 +155,7 @@ a:hover {
   }
 }
 
-.projects-container:nth-of-type(2) {
+.projects-container:nth-of-type(3) {
   @media screen and (min-width: 600px) {
     .project-tile {
       max-width: 30%;
@@ -168,7 +170,7 @@ a:hover {
   }
 }
 
-.projects-container:nth-of-type(3) {
+.projects-container:nth-of-type(4) {
   @media screen and (min-width: 600px) {
     .project-tile {
       max-width: 20%;
