@@ -1,11 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  --foreground-color: rgb(20, 20, 20);
-  --secondary-foreground: rgb(80, 80, 80);
-  --secondary-foreground-darker: rgb(35, 35, 35);
-  --background-color: rgb(250, 250, 250);
-  --secondary-background: rgb(200, 200, 200);
+@media (prefers-color-scheme: light) {
+  :root {
+    transition: 300ms;
+    --foreground-color: rgb(20, 20, 20);
+    --secondary-foreground: rgb(80, 80, 80);
+    --secondary-foreground-darker: rgb(35, 35, 35);
+    --background-color: rgb(250, 250, 250);
+    --secondary-background: rgb(200, 200, 200);
+    --invert: invert(0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    transition: 300ms;
+    --secondary-background: rgb(80, 80, 80);
+    --background-color: rgb(35, 35, 35);
+    --foreground-color: rgb(250, 250, 250);
+    --secondary-foreground: rgb(200, 200, 200);
+    --invert: invert(0.9);
+  }
 }
 
 * {
@@ -121,6 +136,7 @@ a:hover {
         position: relative;
         margin: auto auto;
         display: block;
+        filter: var(--invert);
       }
     }
 
