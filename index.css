@@ -34,11 +34,14 @@ body {
   color: var(--foreground-color);
   font-family: "Work Sans", sans-serif;
   margin: auto;
-  width: 100vw;
-  height: 100vh;
   padding: 3rem;
   position: relative;
   display: block;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 h1 {
