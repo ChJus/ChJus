@@ -95,10 +95,11 @@ a:hover {
 }
 
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
   padding: 2vw;
-  justify-content: space-evenly;
 
   .project-tile.linked:hover {
     cursor: pointer;
@@ -106,9 +107,10 @@ a:hover {
   }
 
   .project-tile {
+    height: 100%;
     transition: 300ms;
     min-width: 200px;
-    width: fit-content;
+    width: 100%;
     max-width: 400px;
     padding: 1vw 1vw;
     display: flex;
@@ -155,51 +157,6 @@ a:hover {
         font-style: italic;
         color: var(--secondary-foreground);
       }
-    }
-  }
-}
-
-.projects-container:nth-of-type(2) {
-  @media screen and (min-width: 600px) {
-    .project-tile {
-      max-width: 50%;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .project-tile {
-      max-width: 90%;
-      padding-bottom: 30px;
-    }
-  }
-}
-
-.projects-container:nth-of-type(3) {
-  @media screen and (min-width: 600px) {
-    .project-tile {
-      max-width: 30%;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .project-tile {
-      max-width: 90%;
-      padding-bottom: 30px;
-    }
-  }
-}
-
-.projects-container:nth-of-type(4) {
-  @media screen and (min-width: 600px) {
-    .project-tile {
-      max-width: 20%;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .project-tile {
-      max-width: 90%;
-      padding-bottom: 30px;
     }
   }
 }
