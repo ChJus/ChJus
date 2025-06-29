@@ -152,7 +152,7 @@ a:hover {
         padding-bottom: 3px;
       }
 
-      .project-date {
+      .project-date, .project-size {
         font-weight: normal;
         font-style: italic;
         color: var(--secondary-foreground);
