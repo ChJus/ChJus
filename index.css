@@ -147,15 +147,22 @@ a:hover {
 
     .text {
       padding: 1vw;
-      .project-name {
-        font-weight: 600;
-        padding-bottom: 3px;
-      }
 
-      .project-date, .project-size {
-        font-weight: normal;
-        font-style: italic;
-        color: var(--secondary-foreground);
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .project-name {
+          font-weight: 600;
+          padding-bottom: 3px;
+        }
+
+        .project-date, .project-size {
+          font-weight: normal;
+          font-style: italic;
+          color: var(--secondary-foreground);
+        }
       }
     }
   }
